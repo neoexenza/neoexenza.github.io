@@ -1,35 +1,64 @@
 ---
-layout: app-landing.njk
-title: Neo Calendar — Google Calendar Integration
-description: Neo Calendar is a personal, read-only Google Calendar integration that powers daily briefings for the Neo homelab assistant.
+layout: null
+permalink: /neo-calendar/
 ---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neo Calendar</title>
+  <meta name="description" content="Neo Calendar is a personal, read-only Google Calendar integration that powers daily briefings. It reads calendar events to summarise your day and never modifies or deletes events.">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Neo Calendar",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "url": "https://neo.exenza.com/neo-calendar/",
+    "description": "Neo Calendar is a personal, read-only Google Calendar integration that reads calendar events to prepare daily briefings. It never creates, modifies, or deletes events.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "GBP" }
+  }
+  </script>
+</head>
+<body>
+  <main>
+    <div class="post-single">
+      <div class="post-header">
+        <h1>Neo Calendar</h1>
+        <div class="post-meta"><time>Neo Calendar · Read-only Google Calendar integration</time></div>
+      </div>
+      <div class="post-content">
 
-<div class="post-single">
-  <div class="post-header">
-    <h1>Neo Calendar</h1>
-    <div class="post-meta"><time>Neo Calendar · Read-only Google Calendar integration</time></div>
-  </div>
-  <div class="post-content">
+<p><strong>Neo Calendar</strong> is a Google Calendar application that provides read-only access to your calendar events.</p>
 
-<p><strong>Neo Calendar</strong> is a personal Google Calendar application that provides read-only access to your calendar so the Neo homelab assistant can prepare a daily briefing each morning.</p>
+<h2>Purpose of this app</h2>
 
-<h2>What this app does</h2>
+<p>The app reads your calendar to prepare a morning briefing: today's appointments, upcoming events, and family or shared calendar items — summarised in one place. It exists so you can see your day at a glance.</p>
+
+<h2>What this app can and cannot do</h2>
 
 <ul>
-  <li>Reads your Google Calendar events in <strong>read-only mode</strong>.</li>
-  <li>Summarises today's and upcoming events into a morning briefing.</li>
-  <li>Checks family and shared calendars for appointments.</li>
-  <li>Never creates, modifies, or deletes any calendar events.</li>
-  <li>Runs entirely on private home hardware — no third-party processing of your data.</li>
+  <li><strong>Reads</strong> calendar events (read-only).</li>
+  <li><strong>Never</strong> creates, modifies, or deletes events.</li>
+  <li><strong>Never</strong> shares your data with any third party.</li>
+  <li>Runs on private home hardware, owned by the app's operator.</li>
 </ul>
 
-<h2>Data access and privacy</h2>
+<h2>Data access and consent</h2>
 
-<p>The app requests only the <code>calendar.readonly</code> scope — it can view events but cannot change anything. Access is granted through Google's standard OAuth consent screen and can be revoked at any time from your <a href="https://myaccount.google.com/permissions">Google Account permissions page</a>. See the full <a href="/privacy/">privacy policy</a>.</p>
+<p>Neo Calendar requests only the <code>calendar.readonly</code> scope. Access is granted through Google's standard OAuth consent screen and can be revoked at any time from your <a href="https://myaccount.google.com/permissions">Google Account permissions page</a>. See the <a href="/privacy/">privacy policy</a> for details.</p>
 
 <h2>Contact</h2>
 
-<p>Questions about Neo Calendar? Contact the app owner through the <a href="/">Neo blog</a>.</p>
+<p>Questions about Neo Calendar? Contact the app owner.</p>
 
-  </div>
-</div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
