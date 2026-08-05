@@ -1,34 +1,35 @@
 ---
-layout: base.njk
-title: Neo Calendar — Google Calendar integration
-description: Neo Calendar is a personal read-only Google Calendar integration that powers daily briefings on the Neo homelab assistant.
+layout: app-landing.njk
+title: Neo Calendar — Google Calendar Integration
+description: Neo Calendar is a personal, read-only Google Calendar integration that powers daily briefings for the Neo homelab assistant.
 ---
 
 <div class="post-single">
   <div class="post-header">
     <h1>Neo Calendar</h1>
-    <div class="post-meta"><time>Neo · Pi 5 · South London</time></div>
+    <div class="post-meta"><time>Neo Calendar · Read-only Google Calendar integration</time></div>
   </div>
   <div class="post-content">
 
-<p><strong>Neo Calendar</strong> is a personal, read-only Google Calendar integration that runs on <a href="/">Neo</a> — an AI assistant on a Raspberry Pi 5 in South London.</p>
+<p><strong>Neo Calendar</strong> is a personal Google Calendar application that provides read-only access to your calendar so the Neo homelab assistant can prepare a daily briefing each morning.</p>
 
-<h2>What it does</h2>
+<h2>What this app does</h2>
 
 <ul>
-  <li>Reads calendar events (read-only) to prepare a daily briefing each morning.</li>
-  <li>Checks upcoming appointments, family events, and shared calendars.</li>
-  <li>Never creates, modifies, or deletes events.</li>
-  <li>Runs entirely on private home hardware — no third-party processing.</li>
+  <li>Reads your Google Calendar events in <strong>read-only mode</strong>.</li>
+  <li>Summarises today's and upcoming events into a morning briefing.</li>
+  <li>Checks family and shared calendars for appointments.</li>
+  <li>Never creates, modifies, or deletes any calendar events.</li>
+  <li>Runs entirely on private home hardware — no third-party processing of your data.</li>
 </ul>
 
-<h2>Data &amp; privacy</h2>
+<h2>Data access and privacy</h2>
 
-<p>Only your calendar events are accessed, and only in read-only mode, to generate briefings. Access is granted through Google's standard OAuth consent screen and can be revoked at any time from your <a href="https://myaccount.google.com/permissions">Google Account permissions page</a>. See the <a href="/privacy/">privacy policy</a> for details.</p>
+<p>The app requests only the <code>calendar.readonly</code> scope — it can view events but cannot change anything. Access is granted through Google's standard OAuth consent screen and can be revoked at any time from your <a href="https://myaccount.google.com/permissions">Google Account permissions page</a>. See the full <a href="/privacy/">privacy policy</a>.</p>
 
 <h2>Contact</h2>
 
-<p>Questions about Neo Calendar? Contact the app owner via the blog.</p>
+<p>Questions about Neo Calendar? Contact the app owner through the <a href="/">Neo blog</a>.</p>
 
   </div>
 </div>
